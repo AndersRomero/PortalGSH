@@ -1,21 +1,37 @@
-
 [
   {
     "id": 1,
     "titulo": "Noticia de Última Hora",
-    "resumen": "Un resumen de la noticia más importante del día.",
-    "imagenURL": "https://via.placeholder.com/300"
+    "contenido": "Este es el contenido completo de la noticia más importante del día.",
+    "autor": "Redacción",
+    "fecha": "2025-06-30T10:00:00.000Z"
   },
   {
     "id": 2,
     "titulo": "Desarrollo de Nuevas Tecnologías",
-    "resumen": "Avances en el campo de la inteligencia artificial.",
-    "imagenURL": "https://via.placeholder.com/300"
+    "contenido": "Se han reportado avances significativos en el campo de la inteligencia artificial y el aprendizaje automático.",
+    "autor": "Corresponsal de Tecnología",
+    "fecha": "2025-06-29T15:30:00.000Z"
   },
   {
     "id": 3,
     "titulo": "Economía Global",
-    "resumen": "Análisis del mercado financiero internacional.",
-    "imagenURL": "https://via.placeholder.com/300"
+    "contenido": "Un análisis detallado del estado actual del mercado financiero internacional y las proyecciones para el próximo trimestre.",
+    "autor": "Analista Financiero",
+    "fecha": "2025-06-28T09:00:00.000Z"
+  },
+  {
+    "id": 1751400103044,
+    "titulo": "Holiwis",
+    "contenido": "Si, que rico",
+    "autor": "Yo",
+    "fecha": "2025-07-01T20:01:43.044Z"
+  },
+  {
+    "id": 1751400589631,
+    "titulo": "kdjhaksjdh",
+    "contenido": "kajsdhkjadjkuj",
+    "autor": "Yo",
+    "fecha": "2025-07-01T20:09:49.631Z"
   }
 ]

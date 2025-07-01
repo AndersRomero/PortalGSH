@@ -2,17 +2,18 @@
 import React from 'react';
 import NewsCard from './NewsCard';
 import newsData from '../data/noticias.json';
+import { Noticia } from '../types';
 
 const NewsFeed: React.FC = () => {
+  const noticias: Noticia[] = newsData;
+
   return (
     <div className="container mt-4">
       <div className="row">
-        {newsData.map(news => (
-          <div className="col-md-4" key={news.id}>
+        {noticias.map(noticia => (
+          <div className="col-md-4 mb-4" key={noticia.id}>
             <NewsCard 
-              title={news.titulo}
-              summary={news.resumen}
-              imageUrl={news.imagenURL}
+              noticia={noticia}
             />
           </div>
         ))}

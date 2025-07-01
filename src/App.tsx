@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AppsPage from './pages/AppsPage';
-import AdminPage from './pages/Admin';
+import Admin from './pages/Admin';
 
 const App: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/apps" element={<AppsPage />} />
-          <Route path="/admin" element={<AdminPage />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </main>
       <Footer />

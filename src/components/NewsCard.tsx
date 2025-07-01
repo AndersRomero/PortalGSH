@@ -1,19 +1,23 @@
 
 import React from 'react';
+import { Noticia } from '../types';
 
 interface NewsCardProps {
-  title: string;
-  summary: string;
-  imageUrl: string;
+  noticia: Noticia;
 }
 
-const NewsCard: React.FC<NewsCardProps> = ({ title, summary, imageUrl }) => {
+const NewsCard: React.FC<NewsCardProps> = ({ noticia }) => {
   return (
-    <div className="card mb-3">
-      <img src={imageUrl} className="card-img-top" alt={title} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{summary}</p>
+    <div className="card h-100">
+      <div className="card-body d-flex flex-column">
+        <h5 className="card-title">{noticia.titulo}</h5>
+        <p className="card-text flex-grow-1">{noticia.contenido}</p>
+        <p className="card-text">
+          <small className="text-muted">Por: {noticia.autor}</small>
+        </p>
+        <p className="card-text">
+          <small className="text-muted">{new Date(noticia.fecha).toLocaleDateString()}</small>
+        </p>
       </div>
     </div>
   );
