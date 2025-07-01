@@ -1,0 +1,23 @@
+
+[
+  {
+    "nombre": "App de Ventas",
+    "iconoURL": "https://via.placeholder.com/80",
+    "enlaceURL": "#"
+  },
+  {
+    "nombre": "Gestión de Clientes",
+    "iconoURL": "https://via.placeholder.com/80",
+    "enlaceURL": "#"
+  },
+  {
+    "nombre": "Soporte Técnico",
+    "iconoURL": "https://via.placeholder.com/80",
+    "enlaceURL": "#"
+  },
+  {
+    "nombre": "Recursos Humanos",
+    "iconoURL": "https://via.placeholder.com/80",
+    "enlaceURL": "#"
+  }
+]

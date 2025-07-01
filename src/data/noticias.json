@@ -1,0 +1,21 @@
+
+[
+  {
+    "id": 1,
+    "titulo": "Noticia de Última Hora",
+    "resumen": "Un resumen de la noticia más importante del día.",
+    "imagenURL": "https://via.placeholder.com/300"
+  },
+  {
+    "id": 2,
+    "titulo": "Desarrollo de Nuevas Tecnologías",
+    "resumen": "Avances en el campo de la inteligencia artificial.",
+    "imagenURL": "https://via.placeholder.com/300"
+  },
+  {
+    "id": 3,
+    "titulo": "Economía Global",
+    "resumen": "Análisis del mercado financiero internacional.",
+    "imagenURL": "https://via.placeholder.com/300"
+  }
+]
