@@ -4,12 +4,16 @@ const Admin = () => {
   const [titulo, setTitulo] = useState('');
   const [contenido, setContenido] = useState('');
   const [autor, setAutor] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
+    setMessage(null);
 
     const nuevaNoticia = {
-      id: Date.now(), // Usamos un timestamp como ID único
+      id: Date.now(),
       titulo,
       contenido,
       autor,
@@ -26,16 +30,18 @@ const Admin = () => {
       });
 
       if (response.ok) {
-        alert('Noticia añadida correctamente');
+        setMessage({ type: 'success', text: '¡Noticia añadida correctamente!' });
         setTitulo('');
         setContenido('');
         setAutor('');
       } else {
-        alert('Error al añadir la noticia');
+        setMessage({ type: 'error', text: 'Error al añadir la noticia. Inténtalo de nuevo.' });
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Error de conexión con el servidor');
+      setMessage({ type: 'error', text: 'Error de conexión con el servidor.' });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -76,7 +82,23 @@ const Admin = () => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary">Añadir Noticia</button>
+        
+        {message && (
+          <div className={`alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'}`}>
+            {message.text}
+          </div>
+        )}
+
+        <button type="submit" className="btn btn-primary" disabled={isLoading}>
+          {isLoading ? (
+            <>
+              <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              <span className="ms-2">Enviando...</span>
+            </>
+          ) : (
+            'Añadir Noticia'
+          )}
+        </button>
       </form>
     </div>
   );

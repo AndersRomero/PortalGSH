@@ -5,9 +5,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  /* Fondo Tecnológico */
+  background: url(../public/images/fondo_portal.png);
+  background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF; /* Color de texto principal blanco */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Estilos para el texto en general */
+h1, h2, h3, h4, h5, h6, p, label, a {
+  color: #FFFFFF; /* Asegura que el texto sea blanco */
+}
+
+/* Sobrescribir estilos de Bootstrap para el navbar */
+.navbar {
+  background-color: #0F4775 !important; /* Color azul personalizado */
+}
+
+.navbar-brand, .nav-link {
+  color: #FFFFFF !important; /* Texto blanco para el navbar */
+}
+
+/* Estilos para las tarjetas de noticias */
+.card {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+  color: #FFFFFF; /* Texto blanco dentro de la tarjeta */
+}
+
+.card-title {
+  color: #FFFFFF; /* Título de la tarjeta blanco */
+}
+
+.card-text {
+  color: #E0E0E0; /* Texto de la tarjeta ligeramente gris para contraste */
+}
+
+.text-muted {
+  color: #B0B0B0 !important; /* Texto muted más claro */
+}
+
+/* Estilos para los botones */
+.btn-primary {
+  background-color: #0F4775 !important;
+  border-color: #0F4775 !important;
+}
+
+.btn-primary:hover {
+  background-color: #0A2E4A !important;
+  border-color: #0A2E4A !important;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
