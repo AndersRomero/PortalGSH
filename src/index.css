@@ -118,6 +118,7 @@ p, label, a {
 
 footer {
   width: 100%;
+<<<<<<< HEAD
 }
 
 /* Estilos para el paginador */
@@ -164,3 +165,7 @@ footer {
 .pagination .page-item:not(.active) .page-link:hover {
   background-color: #e9ecef;
 }
+=======
+  background-color: transparent;
+}
+>>>>>>> ad405173ca5114d964888692cc8258b79b38ab0a
