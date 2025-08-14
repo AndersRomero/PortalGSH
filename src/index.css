@@ -1,18 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  /* Fondo Tecnológico */
-  background: url(../public/images/fondo_portal.png);
-  background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #FFFFFF; /* Color de texto principal blanco */
+  color: #FFFFFF; /* Texto principal blanco para contraste */
+  background-color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+[data-theme='dark'] body {
+  background-color: #121212;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -20,36 +22,87 @@ code {
 }
 
 /* Estilos para el texto en general */
-h1, h2, h3, h4, h5, h6, p, label, a {
-  color: #FFFFFF; /* Asegura que el texto sea blanco */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #0a2e4a;
+  padding: 20px;
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+p, label, a {
+  color: #FFFFFF;
 }
 
 /* Sobrescribir estilos de Bootstrap para el navbar */
 .navbar {
-  background-color: #0F4775 !important; /* Color azul personalizado */
+  background-color: #0F4775 !important;
 }
 
 .navbar-brand, .nav-link {
-  color: #FFFFFF !important; /* Texto blanco para el navbar */
+  color: #FFFFFF !important;
+  transition: transform 0.3s ease;
 }
 
-/* Estilos para las tarjetas de noticias */
+.navbar-brand:hover, .nav-link:hover {
+  color: #FFFFFF !important;
+  transform: scale(1.05);
+}
+
+/* Nuevos estilos para las tarjetas de noticias */
 .card {
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
-  color: #FFFFFF; /* Texto blanco dentro de la tarjeta */
+  border: none;
+  border-top: 5px solid #0a3555; /* Borde superior con el color principal */
+  border-right: 5px solid #0a3555; /* Borde superior con el color principal */
+  color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
-  color: #FFFFFF; /* Título de la tarjeta blanco */
+  font-size: 25px;
+  text-align: center;
+  color: #0A2E4A;
+  margin-bottom: 20px;
+  padding-top: 5px;
+}
+
+.card-body {
+  background-color: #f5f5f5; /* Fondo de la tarjeta con el color principal */
+  border-radius: 8px;
+  padding: 20px;
 }
 
 .card-text {
-  color: #E0E0E0; /* Texto de la tarjeta ligeramente gris para contraste */
+  color: #000; /* Gris claro para el texto */
 }
 
 .text-muted {
-  color: #B0B0B0 !important; /* Texto muted más claro */
+  color: #47494b !important; /* Color estándar para texto silenciado */
+}
+
+/* Estilos para las tarjetas de aplicaciones */
+.app-card {
+  border: none;
+  border-top: 5px solid #0a3555; /* Borde superior con el color principal */
+  border-right: 5px solid #0a3555; /* Borde superior con el color principal */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos para los botones */
@@ -64,7 +117,50 @@ h1, h2, h3, h4, h5, h6, p, label, a {
 }
 
 footer {
-  bottom: 0;
-  position: absolute;
   width: 100%;
+}
+
+/* Estilos para el paginador */
+.pagination {
+  --bs-pagination-bg: rgba(0, 0, 0, 0.5);
+  --bs-pagination-border-color: rgba(255, 255, 255, 0.2);
+  --bs-pagination-color: #FFFFFF;
+  --bs-pagination-hover-bg: rgba(255, 255, 255, 0.1);
+  --bs-pagination-hover-color: #FFFFFF;
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-pagination-active-bg: #0a2e4a;
+  --bs-pagination-active-border-color: #0a2e4a;
+  --bs-pagination-disabled-bg: rgba(0, 0, 0, 0.3);
+  --bs-pagination-disabled-border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para el paginador */
+.pagination {
+  --bs-pagination-bg: rgba(0, 0, 0, 0.5);
+  --bs-pagination-border-color: rgba(255, 255, 255, 0.2);
+  --bs-pagination-color: #FFFFFF;
+  --bs-pagination-hover-bg: rgba(255, 255, 255, 0.1);
+  --bs-pagination-hover-color: #FFFFFF;
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-pagination-active-bg: #0a2e4a;
+  --bs-pagination-active-border-color: #0a2e4a;
+  --bs-pagination-disabled-bg: rgba(0, 0, 0, 0.3);
+  --bs-pagination-disabled-border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para el paginador */
+.pagination .page-item .page-link {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #0a2e4a; /* Color oscuro para los números */
+  border: 1px solid #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0a2e4a;
+  color: #FFFFFF; /* Texto blanco para la página activa */
+  border-color: #0a2e4a;
+}
+
+.pagination .page-item:not(.active) .page-link:hover {
+  background-color: #e9ecef;
 }

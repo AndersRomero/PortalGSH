@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Header: React.FC = () => {
   return (
@@ -18,6 +19,8 @@ const Header: React.FC = () => {
             </li>
           </ul>
         </div>
+
+        <ThemeSwitcher />
 
         <Link to="/admin" className="ms-auto text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-plus-circle" viewBox="0 0 16 16">

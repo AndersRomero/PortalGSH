@@ -4,7 +4,29 @@
 
 Esta es una aplicación web para un portal de noticias. El frontend está construido con **React** y **TypeScript**, y utiliza **Bootstrap** para el diseño. La aplicación permite a los usuarios ver una lista de noticias y, a través de una ruta de administración, permite añadir nuevas noticias sin necesidad de modificar manualmente los archivos de datos.
 
-## 2. Arquitectura y Flujo de Datos
+## 2. Características
+
+*   **Visualización de Noticias:** Muestra una lista de noticias con título, contenido, autor y fecha.
+*   **Administración de Noticias:** Permite a los administradores añadir nuevas noticias a través de un formulario.
+*   **Persistencia de Datos:** Las noticias se guardan en un archivo JSON, actuando como una base de datos simple.
+*   **Servidor Dedicado:** Un servidor Express maneja la lógica de negocio para añadir noticias.
+
+## 3. Tecnologías Utilizadas
+
+*   **Frontend:**
+    *   **React:** Biblioteca para construir interfaces de usuario.
+    *   **TypeScript:** Superset de JavaScript que añade tipado estático.
+    *   **Bootstrap:** Framework de CSS para el diseño de la interfaz.
+    *   **React Router:** Para la gestión de rutas en la aplicación.
+*   **Backend:**
+    *   **Node.js:** Entorno de ejecución para JavaScript en el servidor.
+    *   **Express:** Framework para construir APIs web.
+    *   **CORS:** Para permitir peticiones desde el frontend al backend.
+*   **Herramientas de Desarrollo:**
+    *   **Concurrently:** Para ejecutar múltiples comandos simultáneamente (frontend y backend).
+    *   **React Scripts:** Scripts y configuración para aplicaciones Create React App.
+
+## 4. Arquitectura y Flujo de Datos
 
 El proyecto utiliza una arquitectura cliente-servidor desacoplada para el desarrollo local:
 
@@ -26,7 +48,7 @@ Ambos servidores se inician simultáneamente gracias al script `start` que utili
 9.  **Backend:** Devuelve una respuesta de éxito (`200 OK`) al frontend.
 10. **Frontend:** Al recibir la respuesta de éxito, muestra una alerta al usuario y limpia los campos del formulario.
 
-## 3. Estructura del Proyecto
+## 5. Estructura del Proyecto
 
 A continuación se describen los archivos y directorios más importantes:
 
@@ -41,7 +63,7 @@ A continuación se describen los archivos y directorios más importantes:
     *   **`App.tsx`**: El componente raíz de la aplicación. Define las rutas principales (`/`, `/admin`) utilizando `react-router-dom`.
     *   **`index.tsx`**: El punto de entrada de la aplicación React.
 
-## 4. API Endpoints
+## 6. API Endpoints
 
 ### Añadir Noticia
 
@@ -64,7 +86,7 @@ A continuación se describen los archivos y directorios más importantes:
     *   **Código:** `500 Internal Server Error`
     *   **Contenido:** `Error interno del servidor`
 
-## 5. Cómo Empezar
+## 7. Cómo Empezar
 
 Para poner en marcha el proyecto, sigue estos pasos:
 
@@ -77,3 +99,13 @@ Para poner en marcha el proyecto, sigue estos pasos:
     npm start
     ```
 La aplicación estará disponible en `http://localhost:3000` y la página de administración en `http://localhost:3000/admin`.
+
+## 8. Despliegue
+
+Para crear una versión de producción de la aplicación, puedes utilizar el siguiente comando:
+
+```bash
+npm run build
+```
+
+Esto generará una carpeta `build` con los archivos estáticos de la aplicación, listos para ser desplegados en un servidor web.

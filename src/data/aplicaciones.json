@@ -1,23 +1,68 @@
-
 [
   {
-    "nombre": "App de Ventas",
-    "iconoURL": "https://via.placeholder.com/80",
-    "enlaceURL": "#"
+    "nombre": "DOCDATA-SLH",
+    "iconoURL": "/images/DOCDATA-SLH.png",
+    "enlaceURL": "https://apps.gsh.com.co/docdataslh/forma/dts_login.php",
+    "grupo": "Docdata"
   },
   {
-    "nombre": "Gestión de Clientes",
-    "iconoURL": "https://via.placeholder.com/80",
-    "enlaceURL": "#"
+    "nombre": "DOCDATA-SEH",
+    "iconoURL": "/images/DOCDATA-SEH.png",
+    "enlaceURL": "https://apps.gsh.com.co/docdataseh/forma/dts_login.php",
+    "grupo": "Docdata"
   },
   {
-    "nombre": "Soporte Técnico",
-    "iconoURL": "https://via.placeholder.com/80",
-    "enlaceURL": "#"
+    "nombre": "DOCDATA-TOPJOB",
+    "iconoURL": "/images/DOCDATA-TOPJOB.png",
+    "enlaceURL": "https://apps.gsh.com.co/docdatatpj/forma/dts_login.php",
+    "grupo": "Docdata"
   },
   {
-    "nombre": "Recursos Humanos",
-    "iconoURL": "https://via.placeholder.com/80",
-    "enlaceURL": "#"
+    "nombre": "STARK-SLH",
+    "iconoURL": "/images/STARK-SLH.png",
+    "enlaceURL": "https://apps.gsh.com.co/starkslh/",
+    "grupo": "Stark"
+  },
+  {
+    "nombre": "STARK-SEH",
+    "iconoURL": "/images/STARK-SEH.png",
+    "enlaceURL": "https://apps.gsh.com.co/starkseh/",
+    "grupo": "Stark"
+  },
+  {
+    "nombre": "STARK-TOPJOB",
+    "iconoURL": "/images/STARK-TOPJOB.png",
+    "enlaceURL": "https://apps.gsh.com.co/starktbj/",
+    "grupo": "Stark"
+  },
+  {
+    "nombre": "LEONARD-FEF",
+    "iconoURL": "/images/LEONARD-FEF.png",
+    "enlaceURL": "https://apps.gsh.com.co/leonard/",
+    "grupo": "Otros"
+  },
+  {
+    "nombre": "OPPORTUNITY",
+    "iconoURL": "/images/OPPORTUNITY.png",
+    "enlaceURL": "https://opportunity.gsh.com.co/",
+    "grupo": "Otros"
+  },
+  {
+    "nombre": "MESA DE AYUDA",
+    "iconoURL": "/images/MESA DE AYUDA.png",
+    "enlaceURL": "https://calisof.com:605/",
+    "grupo": "Otros"
+  },
+  {
+    "nombre": "NOVASOFT-SLH",
+    "iconoURL": "/images/NOVASOFT-SLH.png",
+    "enlaceURL": "https://soluciones.gsh.com.co/gshtemporales/Login/Ingreso.aspx?ReturnUrl=%2Fgshtemporales",
+    "grupo": "Novasoft"
+  },
+  {
+    "nombre": "NOVASOFT-SEH",
+    "iconoURL": "/images/NOVASOFT-SEH.png",
+    "enlaceURL": "https://soluciones.gsh.com.co/NovaWeb_BPO/Login/Ingreso.aspx?ReturnUrl=%2FNovaWeb_BPO",
+    "grupo": "Novasoft"
   }
 ]

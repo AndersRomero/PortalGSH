@@ -4,4 +4,5 @@ export interface Noticia {
   contenido: string;
   autor: string;
   fecha: string;
+  imagen?: string;
 }
